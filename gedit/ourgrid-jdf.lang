@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "language.dtd">
+<language _name="Job Description File" version="1.0" _section="Scientific" mimetypes="text/x-ourgrid-jdf">
+
+	<escape-char>\</escape-char>
+
+  <keyword-list _name="Keyword" style="Keyword" case-sensitive="TRUE">
+    <keyword>job</keyword>
+    <keyword>label</keyword>
+    <keyword>requirements</keyword>
+    <keyword>task</keyword>
+    <keyword>init</keyword>
+    <keyword>remote</keyword>
+    <keyword>final</keyword>
+  </keyword-list>
+
+	<keyword-list _name="Commands" style="Function" case-sensitive="TRUE">
+		<keyword>get</keyword>
+		<keyword>put</keyword>
+		<keyword>store</keyword>
+	</keyword-list>
+
+	<keyword-list _name="Environment Variables" style="Data Type" case-sensitive="TRUE" match-empty-string-at-beginning="FALSE" match-empty-string-at-end="FALSE">
+		<keyword>\$JOB</keyword>
+		<keyword>\$TASK</keyword>
+ 		<keyword>\$PROC</keyword>
+    <keyword>\$PLAYPEN</keyword>
+    <keyword>\$STORAGE</keyword>
+	</keyword-list>
+
+	<string _name="String" style="String" end-at-line-end="TRUE">
+		<start-regex>&quot;</start-regex>
+		<end-regex>&quot;</end-regex>
+	</string>
+
+	<pattern-item _name="Numeric" style="Decimal">
+		<regex>(\b([0-9]+|0[xX][0-9a-fA-F]+)[Ll]?\b|\b(([0-9]+[Ee][-]?[0-9]+|([0-9]*\.[0-9]+|[0-9]+\.)([Ee][-]?[0-9]+)?)[fFdD]?|[0-9]+[FfDd]))</regex>
+	</pattern-item>
+
+</language>
