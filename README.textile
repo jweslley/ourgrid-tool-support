@@ -1,5 +1,6 @@
-
 h1. About
+
+Syntax highlighting plugins for "OurGrid's":http://ourgrid.org Job Description Files.
 
 Please check the "gedit/README":http://github.com/jweslley/ourgrid-tool-support/blob/master/gedit/README and "vim/README":http://github.com/jweslley/ourgrid-tool-support/blob/master/vim/README files for more information about.
 
